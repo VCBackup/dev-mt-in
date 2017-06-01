@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: purple;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}

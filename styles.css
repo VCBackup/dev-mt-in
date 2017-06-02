@@ -1,10 +1,109 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
 }
 
-div {
-    background-color: purple;
+font-placeholder {
+    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+colors-placeholder {
+    color: #979797;
+    color: #FFFFFF;
+    color: #000000;
+    color: #A9A9A9;
+    color: #272727;
+    color: #B6B6B6;
+    color: #232323;
+    color: #D7D7D7;
+    color: #EEEDED;
+    color: #EAEAEA;
+    color: #00FFE9;
+    color: #74FDF2;
+    color: #00FFE9;
+    color: #EEEEEE;
+    color: #FCFCFC;
+    color: #ECECEC;
+    color: #FFFCFC;
+    color: #9A9A9A;
+    color: #6C6868;
+    color: #383737;
+    color: #777777;
+    color: #202020;
+    color: #D8D8D8;
+}
+
+header {
+    font-family: 'Lora', serif;
     font-size: 30px;
-    font-weight: bold;
-    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 2vh;
+}
+
+#north-nav-bar {
+    margin-left: 5vw;
+    display: inline-flex;
+    width: 90%;
+    border-bottom-style: solid;
+    border-bottom-color: #D8D8D8;
+    border-width: 1px;
+    padding: 2vh;
+}
+
+#title-box {
+    font-family: 'Lora', serif;
+    font-size: 16.8px;
+    color: #272727;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+}
+#main-body {
+    display: inline-block;
+    width: 90%;
+    height: 75%;
+    padding: 2vh;
+}
+#left-side-main {
+    display: inline-block;
+    width: 50%;
+    height: 75%;
+}
+#right-side-main {
+    float: right;
+    width: 50%;
+    height: 75%;
+}
+#top-triangle {
+    width: 0;
+    height: 0;
+    transform: rotate(170deg);    
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;  
+    border-bottom: 250px solid #00FFE9;
+    position: absolute;
+    bottom: 300px;
+}
+#back-triangle {
+    width: 0;
+    height: 0;
+    transform: rotate(6deg);    
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;  
+    border-bottom: 260px solid #D8D8D8;
+    background-image: url('images\breather-168761.jpg');
+}
+.add-data-block {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    opacity: .5;
+    width: 80%;
+    height: 10%;
+    margin: 1vh;
+    padding-left: 1vh;
+}
+#add-bio {
+    height: 50%;
 }

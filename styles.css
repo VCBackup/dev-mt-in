@@ -67,11 +67,13 @@ header {
     padding: 2vh;
 }
 #left-side-main {
+    padding-top: 5vh;
     display: inline-block;
     width: 50%;
     height: 75%;
 }
 #right-side-main {
+    padding-top: 5vh;
     float: right;
     width: 50%;
     height: 75%;
@@ -84,7 +86,7 @@ header {
     border-right: 180px solid transparent;  
     border-bottom: 250px solid #00FFE9;
     position: absolute;
-    bottom: 300px;
+    bottom: 210px;
 }
 #back-triangle {
     width: 0;
@@ -93,7 +95,7 @@ header {
     border-left: 180px solid transparent;
     border-right: 180px solid transparent;  
     border-bottom: 260px solid #D8D8D8;
-    background-image: url('images\breather-168761.jpg');
+    background: url('images\breather-168761.jpg');
 }
 .add-data-block {
     font-family: 'Lora', serif;
@@ -103,7 +105,38 @@ header {
     height: 10%;
     margin: 1vh;
     padding-left: 1vh;
+    margin-left: 5vh;
 }
 #add-bio {
     height: 50%;
+    padding-bottom: 20vh;
+}
+#save-changes{
+    background-color: #00FFE9;
+    border: none;
+    font-size: 12px;
+    padding: .75vh;
+}
+p {
+    font-size: 13px;
+    text-align: center;
+}
+#footer-nav-bar {
+    display: inline-block;
+    border-top-style: solid;
+    border-top-color: #EEEDED;
+    border-width: 2px;
+    margin-left: 5vw;
+    display: -webkit-inline-box;
+    width: 90%;
+    height: 10%;
+    padding: 2vh;
+    color: #9A9A9A;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+.bottom-nav-bar-display {
+    padding-left: 1vh;
+    padding-right: 24vh;
 }

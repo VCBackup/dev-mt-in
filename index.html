@@ -10,25 +10,33 @@
 </head>
 <body ng-controller="mainCtrl">
 	<header>INITIAL VIEW NO DATA</header>
-	<div id="north-nav-bar">
+	<section id="north-nav-bar">
 		<div id="search-icon"><object data="images\Icons\Search.svg" type="image/svg+xml"></object></div>
 		<div id="title-box">DevMountain</div>
 		<div id="hamburger-icon"><img src="images\Icons\Ham.svg" alt="Ham Icon"></div>
-	</div>
-	<div id="main-body">
+	</section>
+	<section id="main-body">
 		<div id="left-side-main">
-			<p id="p1">Welcome to DevMountain Social</p>
-			<p id="p2">Add Some Info So Friends Can Find You</p>
+			<div>
+				<p id="p1">Welcome to <b>DevMountain</b> Social</p>
+				<p id="p2">Add Some Info So Friends Can Find You</p>
+			</div>
 			<input id="add-name" class="add-data-block" type="text" placeholder="Full Name" ng-model="fullName"></input>
 			<input id="add-tagline" class="add-data-block" type="text" placeholder="Tagline" ng-model="tagline"></input>
 			<input id="add-profileUrl" class="add-data-block" type="text" placeholder="Profile Image URL" ng-model="profileUrl"></input>
 			<input id="add-bio" class="add-data-block" type="text" placeholder="Bio" ng-model="bio"></input>
 			<button id="save-changes" class="add-data-block">Save Changes</button>
-		</div>
-		<div id="right-side-main">
-			<div id="back-triangle"></div>
-			<div id="top-triangle"></div>
-		</div>
+			</div>
+			<div id="right-side-main">
+				<div id="back-triangle"></div>
+				<div id="top-triangle"></div>
+			</div>
+		</section>
+		<section id="footer-nav-bar">
+			<div id="view-friends" class="bottom-nav-bar-display"><nav>View Friends</nav></div>
+			<div id="find-friends" class="bottom-nav-bar-display"><nav>Find Friends</nav></div>
+			<div id="update-profile" class="bottom-nav-bar-display"><nav>Update Profile</nav></div>
+		</section>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
 <script src="js\app.js"></script>

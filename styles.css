@@ -61,11 +61,13 @@ colors-placeholder {
         width: 100%;
         letter-spacing: 1px;
     }
+
     #main-body {
         width: 90%;
         height: 75%;
         padding: 2vh;
     }
+
     #left-side-main {
         padding-top: 5vh;
         display: inline-block;
@@ -73,6 +75,7 @@ colors-placeholder {
         height: 75%;
         position: relative;
     }
+
     #right-side-main {
         position: relative;
         padding-top: 5vh;
@@ -81,6 +84,7 @@ colors-placeholder {
         width: 100%;
         height: 75%;
     }
+
     #top-triangle {
         width: 0;
         height: 0;
@@ -89,18 +93,41 @@ colors-placeholder {
         border-right: 180px solid transparent;  
         border-bottom: 250px solid #74FDF2;
         position: absolute;
-        bottom: -140px;
+        bottom: 120px;
         opacity: .5;
     }
 
-    #top-image {
-        position: relative;
-        width: 160px;
-        height: 160px;
+    #top-image-box {
+        position: absolute;
+        width: 319px;
+        height: 319px;
         margin: 0;
         display: block;
         overflow: hidden;
+        left: 178px;
+        margin-top: 0px;
+        margin-left: 0px;
+        top: 215px;
+        opacity: .5;
+        transform: skew(48deg, -16deg) rotate(6deg);
     }
+
+    #top-image {
+        position: absolute;
+        background-color: red;
+        width: 323px;
+        height: 275px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: -74px;
+        top: -90px;
+        margin-top: 0px;
+        margin-left: 0px;
+        transform: skew(-40deg, 0deg) rotate(-57deg);
+        opacity: .5;
+    }
+
     #back-triangle {
         width: 0;
         height: 0;
@@ -111,19 +138,33 @@ colors-placeholder {
         opacity: .5;
     }
 
-    #back-image {
+    #back-image-box {
         position: relative;
-        width: 160px;
-        height: 160px;
+        width: 392px;
+        height: 275px;
         margin: 0;
         display: block;
         overflow: hidden;
-        transform: skew(20deg, 20deg) translate3d(0,0,0);
-        left: -50%;
-        margin-top: 36px;
-        margin-left: 36px;
-        top: -50%;
-        transform: skew(-20deg, -20deg) rotate(-45deg);    
+        left: 88px;
+        margin-top: 0px;
+        margin-left: 0px;
+        top: -273px;
+        opacity: .5;
+        transform: skew(-37deg, 0deg) rotate(6deg);
+    }
+
+    #back-image {
+        position: relative;
+        width: 729px;
+        height: 275px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: -561px;
+        margin-top: 0px;
+        margin-left: 0px;
+        transform: skew(58.5deg, 0deg) rotate(0deg);
+        opacity: .5;
     }
 
     #p-text {
@@ -133,6 +174,7 @@ colors-placeholder {
         margin-left: 45px;
         width: 300px;
     }
+
     .add-data-block {
         font-family: 'Lora', serif;
         font-size: 16px;
@@ -143,22 +185,27 @@ colors-placeholder {
         padding-left: 1vh;
         margin-left: 5vh;
     }
+
     #add-bio {
         height: 50%;
         padding-bottom: 20vh;
     }
+
     #save-changes{
         background-color: #74FDF2;
         border: none;
         font-size: 12px;
         padding: .75vh;
     }
+
     #devmountain {
         color: #74FDF2;
     }
+
     #spacer-section {
         height: 55vh;
     }
+
     #footer-nav-bar {
         display: inline-block;
         border-top-style: solid;
@@ -174,6 +221,7 @@ colors-placeholder {
         font-weight: bold;
         font-size: 13px;
     }
+
     .bottom-nav-bar-display {
         padding-left: 1%;
         padding-right: 5%;

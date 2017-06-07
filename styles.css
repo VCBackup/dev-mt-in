@@ -88,13 +88,13 @@ colors-placeholder {
     #top-triangle {
         width: 0;
         height: 0;
-        transform: rotate(171deg);    
+        transform: rotate(171deg);
         border-left: 180px solid transparent;
-        border-right: 180px solid transparent;  
+        border-right: 180px solid transparent;
         border-bottom: 250px solid #74FDF2;
+        top: 199px;
+        left: 15px;
         position: absolute;
-        bottom: 120px;
-        opacity: .5;
     }
 
     #top-image-box {
@@ -104,17 +104,16 @@ colors-placeholder {
         margin: 0;
         display: block;
         overflow: hidden;
-        left: 178px;
+        left: 175px;
         margin-top: 0px;
         margin-left: 0px;
-        top: 215px;
+        top: 204px;
         opacity: .5;
         transform: skew(48deg, -16deg) rotate(6deg);
     }
 
     #top-image {
         position: absolute;
-        background-color: red;
         width: 323px;
         height: 275px;
         margin: 0;
@@ -266,6 +265,7 @@ colors-placeholder {
         display: inline-block;
         width: 50%;
         height: 75%;
+        position: relative;
     }
     #right-side-main {
         position: relative;
@@ -281,10 +281,39 @@ colors-placeholder {
         border-left: 180px solid transparent;
         border-right: 180px solid transparent;  
         border-bottom: 250px solid #74FDF2;
-        position: absolute;
-        bottom: -140px;
-        opacity: .5;
+        position: relative;
+        bottom: 383px;
+        left: 15px;
 
+    }
+    #top-image-box {
+        position: relative;
+        width: 319px;
+        height: 319px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: 175px;
+        margin-top: 0px;
+        margin-left: 0px;
+        top: -628px;
+        opacity: .5;
+        transform: skew(48deg, -16deg) rotate(6deg);
+    }
+
+    #top-image {
+        position: absolute;
+        width: 323px;
+        height: 275px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: -74px;
+        top: -90px;
+        margin-top: 0px;
+        margin-left: 0px;
+        transform: skew(-40deg, 0deg) rotate(-57deg);
+        opacity: .5;
     }
     #back-triangle {
         width: 0;
@@ -295,6 +324,34 @@ colors-placeholder {
         border-bottom: 260px solid #D8D8D8;
         opacity: .5;
 
+    }
+    #back-image-box {
+        position: relative;
+        width: 392px;
+        height: 275px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: 88px;
+        margin-top: 0px;
+        margin-left: 0px;
+        top: -273px;
+        opacity: .5;
+        transform: skew(-37deg, 0deg) rotate(6deg);
+    }
+
+    #back-image {
+        position: relative;
+        width: 729px;
+        height: 275px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: -561px;
+        margin-top: 0px;
+        margin-left: 0px;
+        transform: skew(58.5deg, 0deg) rotate(0deg);
+        opacity: .5;
     }
     .add-data-block {
         font-family: 'Lora', serif;
@@ -400,11 +457,36 @@ colors-placeholder {
         border-left: 180px solid transparent;
         border-right: 180px solid transparent;  
         border-bottom: 250px solid #74FDF2;
-        position: absolute;
-        bottom: -140px;
-        margin-left: 30%;
-        opacity: .5;
+        position: relative;
 
+    }
+    #top-image-box {
+        position: relative;
+        width: 319px;
+        height: 319px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: 175px;
+        margin-top: 0px;
+        margin-left: 0px;
+        opacity: .5;
+        transform: skew(48deg, -16deg) rotate(6deg);
+    }
+
+    #top-image {
+        position: absolute;
+        width: 323px;
+        height: 275px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: -74px;
+        top: -90px;
+        margin-top: 0px;
+        margin-left: 0px;
+        transform: skew(-40deg, 0deg) rotate(-57deg);
+        opacity: .5;
     }
     #back-triangle {
         width: 0;
@@ -413,7 +495,34 @@ colors-placeholder {
         border-left: 180px solid transparent;
         border-right: 180px solid transparent;  
         border-bottom: 260px solid #D8D8D8;
-        margin-left: 30%;
+        opacity: .5;
+    }
+    #back-image-box {
+        position: relative;
+        width: 392px;
+        height: 275px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: 88px;
+        margin-top: 0px;
+        margin-left: 0px;
+        top: -273px;
+        opacity: .5;
+        transform: skew(-37deg, 0deg) rotate(6deg);
+    }
+
+    #back-image {
+        position: relative;
+        width: 729px;
+        height: 275px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        left: -561px;
+        margin-top: 0px;
+        margin-left: 0px;
+        transform: skew(58.5deg, 0deg) rotate(0deg);
         opacity: .5;
     }
     .add-data-block {

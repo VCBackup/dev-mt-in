@@ -1,6 +1,6 @@
 devMtIn.controller('mainCtrl', function($scope, mainService){
-    var userProfile = window.localStorage.getItem("userProfile");
-    console.log(userProfile);
+    var userProfile = JSON.parse(window.localStorage.getItem("userProfile"));
+    console.log(userProfile.fullName);
     if (window.localStorage.getItem("userProfile") == false){
         return $scope.header = 'INITIAL VIEW NO DATA';
     }

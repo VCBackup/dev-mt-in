@@ -2,6 +2,13 @@
     box-sizing: border-box;
     margin: 0px;
 }
+a {
+    color: #9A9A9A;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
 
 font-placeholder {
     font-family: 'Lora', serif;
@@ -35,13 +42,6 @@ colors-placeholder {
 }
 
 @media (max-width: 700px){
-    header {
-        font-family: 'Lora', serif;
-        font-size: 30px;
-        width: 100%;
-        text-align: center;
-        padding: 2vh;
-    }
 
     #north-nav-bar {
         margin-left: 5vw;
@@ -63,6 +63,7 @@ colors-placeholder {
     }
 
     #main-body {
+        position: relative;
         width: 90%;
         height: 75%;
         padding: 2vh;
@@ -82,7 +83,6 @@ colors-placeholder {
         padding-left: inherit;
         float: right;
         width: 100%;
-        height: 75%;
     }
 
     #top-triangle {
@@ -215,27 +215,16 @@ colors-placeholder {
         width: 90%;
         height: 10%;
         padding: 2vh;
-        color: #9A9A9A;
-        font-family: 'Open-Sans', sans-serif;
-        font-weight: bold;
-        font-size: 13px;
     }
 
     .bottom-nav-bar-display {
-        padding-left: 1%;
-        padding-right: 5%;
+        padding-left: 1vw;
+        padding-right: 8vw;
     }
 
 }
 
 @media (min-width: 700px){
-    header {
-        font-family: 'Lora', serif;
-        font-size: 30px;
-        width: 100%;
-        text-align: center;
-        padding: 2vh;
-    }
 
     #north-nav-bar {
         margin-left: 5vw;
@@ -256,6 +245,7 @@ colors-placeholder {
         letter-spacing: 1px;
     }
     #main-body {
+        position: relative;
         width: 90%;
         height: 75%;
         padding: 2vh;
@@ -271,8 +261,8 @@ colors-placeholder {
         position: relative;
         padding-top: 5vh;
         float: right;
-        width: 50%;
-        height: 75%;
+        width: 40%;
+        height: 487px;
     }
     #top-triangle {
         width: 0;
@@ -393,26 +383,15 @@ colors-placeholder {
         width: 90%;
         height: 10%;
         padding: 2vh;
-        color: #9A9A9A;
-        font-family: 'Open-Sans', sans-serif;
-        font-weight: bold;
-        font-size: 13px;
     }
     .bottom-nav-bar-display {
         padding-left: 1vw;
-        padding-right: 20vw;
+        padding-right: 26vw;
     }
 
 }
 
 @media (min-width: 1000px){
-    header {
-        font-family: 'Lora', serif;
-        font-size: 30px;
-        width: 100%;
-        text-align: center;
-        padding: 2vh;
-    }
 
     #north-nav-bar {
         margin-left: 5vw;
@@ -433,6 +412,7 @@ colors-placeholder {
         letter-spacing: 1px;
     }
     #main-body {
+        position: relative;
         width: 90%;
         height: 75%;
         padding: 2vh;
@@ -447,8 +427,8 @@ colors-placeholder {
         position: relative;
         padding-top: 5vh;
         float: right;
-        width: 50%;
-        height: 75%;
+        width: 30%;
+        height: 487px;
     }
     #top-triangle {
         width: 0;
@@ -565,10 +545,6 @@ colors-placeholder {
         width: 90%;
         height: 10%;
         padding: 2vh;
-        color: #9A9A9A;
-        font-family: 'Open-Sans', sans-serif;
-        font-weight: bold;
-        font-size: 13px;
     }
     .bottom-nav-bar-display {
         padding-left: 1vw;

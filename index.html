@@ -3,48 +3,33 @@
 
 <head>
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<base href="/initial.html">
+  	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,600,700" rel="stylesheet">
 	<title>DevMtin</title>
 </head>
 <body ng-controller="mainCtrl">
-	<header>{{header}}</header>
 	<section id="north-nav-bar">
 		<div id="search-icon"><object data="images\Icons\Search.svg" type="image/svg+xml"></object></div>
 		<div id="title-box">DevMountain</div>
 		<div id="hamburger-icon"><img src="images\Icons\Ham.svg" alt="Ham Icon"></div>
 	</section>
 	<section id="main-body">
-		<div id="left-side-main">
-			<div id="p-text">
-				<p id="p1">Welcome to <b id="devmountain">DevMountain</b> Social</p>
-				<p id="p2">Add Some Info So Friends Can Find You</p>
-			</div>
-			<input id="add-name" class="add-data-block" type="text" placeholder="Full Name" ng-model="fullName"></input>
-			<input id="add-tagline" class="add-data-block" type="text" placeholder="Tagline" ng-model="tagline"></input>
-			<input id="add-profileUrl" class="add-data-block" type="text" placeholder="Profile Image URL" ng-model="profileUrl"></input>
-			<input id="add-bio" class="add-data-block" type="text" placeholder="Bio" ng-model="bio"></input>
-			<button id="save-changes" class="add-data-block" ng-click="savePersonalData(fullName, tagline, profileUrl, bio)">Save Changes</button>
-			</div>
-			<div id="right-side-main">
-				<div id="back-triangle"></div>
-				<div id="back-image-box"><img id="back-image" src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?dpr=1" alt="Some text here"></div>	
-				<div id="top-triangle"></div>
-				<div id="top-image-box"><img id="top-image" src="https://images.unsplash.com/photo-1492543035903-02e1ba0a59b0?dpr=1" alt="Some other text here" ></div>
-			</div>
-		</section>
-		<section id="spacer-section">
-		</section>
-		<section id="footer-nav-bar">
-			<div id="view-friends" class="bottom-nav-bar-display"><nav>View Friends</nav></div>
-			<div id="find-friends" class="bottom-nav-bar-display"><nav>Find Friends</nav></div>
-			<div id="update-profile" class="bottom-nav-bar-display"><nav>Update Profile</nav></div>
-		</section>
-	</div>
+		<div ng-view></div>
+	</section>
+	<section id="spacer-section">
+	</section>
+	<section id="footer-nav-bar">
+		<div id="view-friends" class="bottom-nav-bar-display"><a href="#friends">View Friends</a></div>
+		<div id="find-friends" class="bottom-nav-bar-display"><a href="#search">Find Friends</a></div>
+		<div id="update-profile" class="bottom-nav-bar-display"><a href="#update">Update Profile</a></div>
+	</section>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 <script src="js\app.js"></script>
 <script src="js\mainCtrl.js"></script>
 <script src="js\mainService.js"></script>
+<script src="js\config.js"></script>
 </body>
 </html>

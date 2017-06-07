@@ -1,1 +1,1 @@
-var devMtIn = angular.module('devMtIn', []);
+var devMtIn = angular.module('devMtIn', ['ngRoute']);

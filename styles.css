@@ -53,6 +53,10 @@ colors-placeholder {
         padding: 2vh;
     }
 
+#search-icon {
+    height: 30px;
+    width: 30px;
+}
     #title-box {
         font-family: 'Lora', serif;
         font-size: 16.8px;

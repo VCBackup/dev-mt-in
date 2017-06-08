@@ -1,30 +1,35 @@
-devMtIn.config(function($routeProvider, $locationProvider){
-$routeProvider
+devMtIn.config(function($urlRouterProvider, $stateProvider){
 
-    .when('/', {
-        templateUrl: 'pages/initial.html',
-        controller: 'mainCtrl'
-    })
-    .when('/landing', {
-        templateUrl: 'pages/landing.html',
-        controller: 'mainCtrl'
-    })
-    .when('/friends',{
-        templateUrl: 'pages/friends.html',
-        controller: 'mainCtrl'
-    })
-    .when('/profile',{
-        templateUrl: 'pages/profile.html',
-        controller: 'mainCtrl'
-    })
-    .when('/search', {
-        templateUrl: 'pages/search.html',
-        controller: 'mainCtrl'
-    })
-    .when('/update', {
-        templateUrl: 'pages/update.html',
-        controller: 'mainCtrl'
-    })
+    $stateProvider
+        .state('initial', {
+                templateUrl: 'pages\\initial.html',
+                url: '/initial',
+                controller: 'mainCtrl'
+            })
+        .state('landing', {
+                templateUrl: 'pages\\landing.html',
+                url: '/landing',
+                controller: 'mainCtrl'
+            })
+        .state('friends',{
+                templateUrl: 'pages\\friends.html',
+                url: '/friends',
+                controller: 'mainCtrl'
+            })
+        .state('profile',{
+                templateUrl: 'pages\\profile.html',
+                url: '/profile',
+                controller: 'mainCtrl'
+            })
+        .state('search', {
+                templateUrl: 'pages\\search.html',
+                url: '/search',
+                controller: 'mainCtrl'
+            })
+        .state('update', {
+                templateUrl: 'pages\\update.html',
+                url: '/update',
+                controller: 'mainCtrl'
+            })
 
-    $locationProvider.html5Mode(true);
 });

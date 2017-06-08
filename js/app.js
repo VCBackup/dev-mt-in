@@ -1,1 +1,1 @@
-var devMtIn = angular.module('devMtIn', ['ngRoute']);
+var devMtIn = angular.module('devMtIn', ['ui.router']);

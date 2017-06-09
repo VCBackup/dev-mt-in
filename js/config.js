@@ -1,9 +1,10 @@
 devMtIn.config(function($urlRouterProvider, $stateProvider){
 
+    $urlRouterProvider.otherwise('/')
     $stateProvider
         .state('initial', {
                 templateUrl: 'pages\\initial.html',
-                url: '/initial',
+                url: '/',
                 controller: 'mainCtrl'
             })
         .state('landing', {

@@ -1,9 +1,14 @@
 devMtIn.controller('mainCtrl', function($scope, mainService){
     var userProfile = JSON.parse(window.localStorage.getItem("userProfile"));
     console.log(userProfile.fullName);
-    if (window.localStorage.getItem("userProfile") == false){
-        return $scope.header = 'INITIAL VIEW NO DATA';
-    }
+        $scope.fullName = userProfile.fullName;
+        $scope.tagline = userProfile.tagline;
+        $scope.profileUrl = userProfile.profileUrl;
+        $scope.bio = userProfile.bio;
+        $scope.newFullName = '';
+        $scope.newTagline = '';
+        $scope.newProfileUrl = '';
+        $scope.newBio = '';
         $scope.header = window.localStorage.getItem('userProfile');
 
     $scope.savePersonalData = function(fullName, tagline, profileUrl, bio){

@@ -27,9 +27,16 @@ devMtIn.service('mainService', function($http, $q, $location){
             profileUrl: newUrl,
             bio: newBio
         }
-        }
-        
+        console.log('This is the current object: ' + userProfile
+        + 'This is the current name: ' + userProfile.fullName);
+        $location.path('/landing')
         return userProfile;
+        }
+        console.log("Falsy values passed");
+        console.log('This is the current object: ' + userProfile
+        + 'This is the current name: ' + userProfile.fullName);
+        $location.path('/update')
+        alert('Required Field is empty');
     }
 
     this.myLocation = function(){
@@ -45,5 +52,9 @@ devMtIn.service('mainService', function($http, $q, $location){
         }
     }
 
+    this.currentProfile = function(currentUserProfile){
+        var userProfile = currentUserProfile;
+        return userProfile;
+    }
 
 });

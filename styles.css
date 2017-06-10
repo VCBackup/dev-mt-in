@@ -43,9 +43,6 @@ colors-placeholder {
 }
 
 .current-location {
-    margin-left: 1vw;
-    margin-right: 8vw;
-    padding-bottom: 2px;
     color: #9A9A9A;
     font-family: 'Open-Sans', sans-serif;
     font-weight: bold;
@@ -406,6 +403,11 @@ colors-placeholder {
     .bottom-nav-bar-display {
         padding-left: 1vw;
         padding-right: 26vw;
+        color: #9A9A9A;
+        font-family: 'Open-Sans', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        text-decoration: none;
     }
 
 }
@@ -568,6 +570,11 @@ colors-placeholder {
     .bottom-nav-bar-display {
         padding-left: 1vw;
         padding-right: 30vw;
+        color: #9A9A9A;
+        font-family: 'Open-Sans', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        text-decoration: none;
     }
 
 }

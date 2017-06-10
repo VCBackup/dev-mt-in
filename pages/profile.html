@@ -1,13 +1,9 @@
 <div id="left-side-main">
-<div id="p-text">
-	<p id="p1">Welcome to <b id="devmountain">DevMountain</b> Social</p>
-	<p id="p2">Add Some Info So Friends Can Find You</p>
-</div>
-	<input id="add-name" class="add-data-block" type="text" placeholder="Full Name" ng-model="fullName"></input>
-	<input id="add-tagline" class="add-data-block" type="text" placeholder="Tagline" ng-model="tagline"></input>
-	<input id="add-profileUrl" class="add-data-block" type="text" placeholder="Profile Image URL" ng-model="profileUrl"></input>
-	<input id="add-bio" class="add-data-block" type="text" placeholder="Bio" ng-model="bio"></input>
-	<button id="save-changes" class="add-data-block" ng-click="savePersonalData(fullName, tagline, profileUrl, bio)">Save Changes</button>
+	<div id="info-block">
+		<div id="name-box" class="add-data-block">{{fullName}}</div>
+		<div id="tagline-box" class="add-data-block">{{tagline}}</div>
+		<div id="bio-box" class="add-data-block">{{bio}}</div>
+	</div>
 </div>
 <div id="right-side-main">
 	<div id="back-triangle"></div>

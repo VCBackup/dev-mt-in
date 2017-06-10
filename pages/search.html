@@ -1,25 +1,21 @@
 <section id="north-nav-bar">
-	<a ui-sref="search"><div id="search-icon-box"><object id="search-icon" data="images\Icons\Search.svg" type="image/svg+xml"></object></div></a>
+	<a ui-sref="search"><div id="search-icon-box"><img id="search-icon" src="images\Icons\Search.svg" type="image/svg+xml"></img></div></a>
 	<div id="title-box">DevMountain</div>
 	<div id="hamburger-icon-box"><img id="hamburger-icon" src="images\Icons\Ham.svg" alt="Ham Icon"></div>
 </section>
 <section id="main-body">
 	<div id="left-side-main">
-	<div id="p-text">
-		<p id="p1">Welcome to <b id="devmountain">DevMountain</b> Social</p>
-		<p id="p2">Add Some Info So Friends Can Find You</p>
-	</div>
-		<input id="add-name" class="add-data-block" type="text" placeholder="Full Name" ng-model="fullName"></input>
-		<input id="add-tagline" class="add-data-block" type="text" placeholder="Tagline" ng-model="tagline"></input>
-		<input id="add-profileUrl" class="add-data-block" type="text" placeholder="Profile Image URL" ng-model="profileUrl"></input>
-		<input id="add-bio" class="add-data-block" type="text" placeholder="Bio" ng-model="bio"></input>
-		<button id="save-changes" class="add-data-block" ng-click="savePersonalData(fullName, tagline, profileUrl, bio)">Save Changes</button>
+		<div id="info-block">
+			<div id="name-box" class="add-data-block">{{fullName}}</div>
+			<div id="tagline-box" class="add-data-block">{{tagline}}</div>
+			<div id="bio-box" class="add-data-block">{{bio}}</div>
+		</div>
 	</div>
 	<div id="right-side-main">
-		<div id="back-triangle"></div>
-		<div id="back-image-box"><img id="back-image" src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?dpr=1" alt="Some text here"></div>	
-		<div id="top-triangle"></div>
-		<div id="top-image-box"><img id="top-image" src="https://images.unsplash.com/photo-1492543035903-02e1ba0a59b0?dpr=1" alt="Some other text here" ></div>
+		<input id="search-friends-input" type="text" placeholder="Search for Friends" ng-model="newSearch"></input>
+		<div id="picture-block">
+
+		</div>
 	</div>
 </section>
 <section id="spacer-section">

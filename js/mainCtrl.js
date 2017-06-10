@@ -10,6 +10,7 @@ devMtIn.controller('mainCtrl', function($scope, mainService){
         $scope.newProfileUrl = '';
         $scope.newBio = '';
         $scope.header = window.localStorage.getItem('userProfile');
+        $scope.currentLocation = mainService.myLocation();
 
     $scope.savePersonalData = function(fullName, tagline, profileUrl, bio){
             var userProfile = mainService.createProfile(fullName, tagline, profileUrl, bio);

@@ -2,13 +2,6 @@
     box-sizing: border-box;
     margin: 0px;
 }
-a {
-    color: #9A9A9A;
-    font-family: 'Open-Sans', sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    text-decoration: none;
-}
 
 font-placeholder {
     font-family: 'Lora', serif;
@@ -41,6 +34,27 @@ colors-placeholder {
     color: #D8D8D8;
 }
 
+#search-icon-box {
+    padding-top: 10px;
+}
+
+#hamburger-icon-box {
+    padding-top: 5px;
+}
+
+.current-location {
+    margin-left: 1vw;
+    margin-right: 8vw;
+    padding-bottom: 2px;
+    color: #9A9A9A;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #00FFE9;
+}
 @media (max-width: 700px){
 
     #north-nav-bar {
@@ -53,10 +67,6 @@ colors-placeholder {
         padding: 2vh;
     }
 
-#search-icon {
-    height: 30px;
-    width: 30px;
-}
     #title-box {
         font-family: 'Lora', serif;
         font-size: 16.8px;
@@ -224,6 +234,11 @@ colors-placeholder {
     .bottom-nav-bar-display {
         padding-left: 1vw;
         padding-right: 8vw;
+        color: #9A9A9A;
+        font-family: 'Open-Sans', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        text-decoration: none;
     }
 
 }

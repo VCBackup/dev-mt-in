@@ -18,7 +18,6 @@ devMtIn.service('mainService', function($http, $q, $location){
         alert("Required Field is empty")
     }
     
-
     this.updateProfile = function(profile){
         console.log(profile);
         if (name && tag && url && bio){
@@ -32,5 +31,19 @@ devMtIn.service('mainService', function($http, $q, $location){
         
         return userProfile;
     }
+
+    this.myLocation = function(){
+        if ($location.path() == '/friends'){
+            document.getElementById('view-friends-text').className = 'current-location';
+        }
+        else if ($location.path() == '/search'){
+            document.getElementById('find-friends-text').className = 'current-location';
+            }
+
+        else if ($location.path() == '/update'){
+            document.getElementById('update-profile-text').className = 'current-location';
+        }
+    }
+
 
 });

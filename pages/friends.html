@@ -5,14 +5,13 @@
 </section>
 <section id="main-body">
 	<div id="left-side-main">
-		<div id="name-box" class="add-data-block">{{fullName}}</div>
-		<div id="tagline-box" class="add-data-block">{{tagline}}</div>
-		<div id="bio-box" class="add-data-block">{{bio}}</div></div>
+		<div id="name-box" class="add-data-block">{{friendsList[0][name]}}</div>
+		<div id="tagline-box" class="add-data-block">{{friendsList[0][tagline]}}</div>
+		<div id="bio-box" class="add-data-block">{{friendsList[0][bio]}}</div></div>
 	<div id="right-side-main">
-		<div id="back-triangle"></div>
-		<div id="back-image-box"><img id="back-image" src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?dpr=1" alt="Some text here"></div>	
-		<div id="top-triangle"></div>
-		<div id="top-image-box"><img id="top-image" src="https://images.unsplash.com/photo-1492543035903-02e1ba0a59b0?dpr=1" alt="Some other text here" ></div>
+		<div id="friend-picture-block">
+			<img ng-src="{{friendsList[0][pictureUrl]}}" alt=""></img>
+		</div>
 	</div>
 </section>
 <section id="spacer-section">

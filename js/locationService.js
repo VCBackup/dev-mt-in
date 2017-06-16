@@ -1,5 +1,5 @@
 devMtIn.service('locationService', function($location){
-    
+    console.log($location);
     this.myLocation = function(){
         if ($location.path() == '/friends'){
             document.getElementById('view-friends-text').className = 'current-location';
@@ -11,6 +11,7 @@ devMtIn.service('locationService', function($location){
         else if ($location.path() == '/update'){
             document.getElementById('update-profile-text').className = 'current-location';
         }
+        return;
     }
 
 });

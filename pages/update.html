@@ -8,13 +8,12 @@
 		<div id="name-box" class="add-data-block">{{fullName}}</div>
 		<div id="tagline-box" class="add-data-block">{{tagline}}</div>
 		<div id="bio-box" class="add-data-block">{{bio}}</div>
-
 	</div>
 	<div id="right-side-main">
 		<input id="add-name" class="add-data-block" type="text" placeholder="Full Name" ng-model="newFullName"></input>
 		<input id="add-tagline" class="add-data-block" type="text" placeholder="Tagline" ng-model="newTagline"></input>
 		<input id="add-profileUrl" class="add-data-block" type="text" placeholder="Profile Image URL" ng-model="newProfileUrl"></input>
-		<input id="add-bio" class="add-data-block" type="text" placeholder="Bio" ng-model="newBio"></input>
+		<textarea id="add-bio" class="add-data-block" type="text" placeholder="Bio" ng-model="newBio"></textarea>
 		<button id="save-changes" class="add-data-block" ng-click="updatePersonalData(newFullName, newTagline, newProfileUrl, newBio)">Save Changes</button>
 	</div>
 </section>

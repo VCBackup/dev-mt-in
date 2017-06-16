@@ -1,4 +1,4 @@
-devMtIn.controller('mainCtrl', function($scope, mainService){
+devMtIn.controller('mainCtrl', function($scope, profileService, locationService){
 
     if (userProfile){
         var userProfile = JSON.parse(window.localStorage.getItem("userProfile"));
@@ -10,7 +10,7 @@ devMtIn.controller('mainCtrl', function($scope, mainService){
         return userProfile;
     }
 
-    $scope.currentLocation = mainService.myLocation();
+    $scope.currentLocation = locationService.myLocation();
 
     $scope.savePersonalData = function(fullName, tagline, profileUrl, bio){
         var userProfile = mainService.createProfile(fullName, tagline, profileUrl, bio);
@@ -27,7 +27,7 @@ devMtIn.controller('mainCtrl', function($scope, mainService){
         return userProfile;
     }
     
-    $scope.currentProfile = mainService.currentProfile(JSON.parse(window.localStorage.getItem("userProfile")));
+    $scope.currentProfile = profileService.currentProfile(JSON.parse(window.localStorage.getItem("userProfile")));
 
     $scope.friendsList = [
         {
@@ -182,94 +182,93 @@ devMtIn.controller('mainCtrl', function($scope, mainService){
         },        
         {
             name: 'Leo',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'Be yourself. Embrace your weirdness.',
+            bio: 'Just a Wizard on the run from Azkaban.',
             pictureUrl: 'images/Profile-Pics/leo.jpg'
         },        
         {
             name: 'Lesley',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'Now watch me whip... Now watch me neigh neigh',
+            bio: 'I need me some steak',
             pictureUrl: 'images/Profile-Pics/lesley.jpg'
         },        
         {
             name: 'Lily',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'I couldn\'t live where there were no trees- something vital in me would starve.',
+            bio: 'We\'ll ascend until we\'re out of sight. Light as paper, we\'ll soar!',
             pictureUrl: 'images/Profile-Pics/lily.jpg'
         },        
         {
             name: 'Mari',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'Death means nothing at all. It does not count. I have only slipped away into the next room.',
+            bio: 'Ever had a memory sneak out of your eye and roll down your cheek?',
             pictureUrl: 'images/Profile-Pics/mari.jpg'
         },        
         {
             name: 'Marilyn',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'Who needs books? Save a tree, watch TV!',
+            bio: 'Searching for answers? Listen for them in general conference, broadcast live on our mobile app, YouTube and Roku channels, Apple TV, and right here on Facebook.',
             pictureUrl: 'images/Profile-Pics/marilyn.jpg'
         },        
         {
             name: 'Mark',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'Memorial Day is for the fallen. Please don\'t thank me this weekend',
+            bio: 'The water pump in my wife\'s Buick is FINALLY done. Mark:1 Car:0',
             pictureUrl: 'images/Profile-Pics/mark.jpg'
         },        
         {
             name: 'Martin',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'When you need a tree down hire a pro. And never use a ladder.',
+            bio: 'Things are happening here!!',
             pictureUrl: 'images/Profile-Pics/martin.jpg'
         },        
         {
             name: 'Missy',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'I think it\'s safe to say that staff meeting was successful today ',
+            bio: 'This morning I shared the biblical story of the woman who suffered for 12 years with a debilitating problem.',
             pictureUrl: 'images/Profile-Pics/missy.jpg'
         },        
         {
             name: 'Paula',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'It was a fun Easter with 6 out of 7 grandchildren!',
+            bio: '"Past the point of no return" Evie bought herself some Barbies with her Christmas money from Grandpa James and Grandma Paula plus a whole lot of chores to earn the rest. Proud of my girl for saving her money up toward a big goal.',
             pictureUrl: 'images/Profile-Pics/paula.jpg'
         },        
         {
             name: 'Rinoa',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'I miss overeating with you...',
+            bio: 'If chocolate is handmade by Benedictine nuns then it\'s healthy right?',
             pictureUrl: 'images/Profile-Pics/rinoa.jpg'
         },        
         {
             name: 'Shania',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'Love my roomie!!!',
+            bio: 'This play is so spicy, I saw it twice-y. Hale Center Theatre does it again! Peter and the Starcatcher is amazing!',
             pictureUrl: 'images/Profile-Pics/shania.jpg'
         },        
         {
             name: 'Shawn',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'Get used to it Steve. I am still her first and only love.',
+            bio: 'Beautiful day for a wedding!!',
             pictureUrl: 'images/Profile-Pics/shawn.jpg'
         },        
         {
             name: 'Shawna',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'Good morning to you Shawna!',
+            bio: 'We were excited for Kristin Chenoweth! Becca and I have been lucky enough to see many Broadway stars, here\'s to another!! She was amazing! Spunky, fun, full of faith and sang such touching numbers! I\'d say it was spiritual, inspirational and heart warming.',
             pictureUrl: 'images/Profile-Pics/shawna.jpg'
         },        
         {
             name: 'Tanya',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'I couldn\'t come up with something clever.',
+            bio: 'Enjoying the Matisyahu concert with my little brother. This guy has taught me how to skate, snowboard, swim, to love basketball and has been a constant example of kindness. I guess I owe him my coolness.',
             pictureUrl: 'images/Profile-Pics/tanya.jpg'
         },        
         {
             name: 'Vylara',
-            tagline: 'Yo yo yo!',
-            bio: 'I just love livin life! You feel me?',
+            tagline: 'It is November 1st! We are officially allowed to talk about Christmas!',
+            bio: 'Such. A. PERECT. Day. Sang "Fight Song" at the top of my lungs in a quartet, enjoyed the sunshine, laughed with my whole heart, and had a meal at a questionable restaurant.',
             pictureUrl: 'images/Profile-Pics/vylara.jpg'
         }
     ]
-    console.log($scope.friendsList);
 });

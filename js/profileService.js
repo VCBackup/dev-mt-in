@@ -1,4 +1,4 @@
-devMtIn.service('mainService', function($http, $q, $location){
+devMtIn.service('profileService', function($http, $q){
 
     this.createProfile = function(name, tag, url, bio){
         console.log(name, tag, url, bio);
@@ -10,11 +10,9 @@ devMtIn.service('mainService', function($http, $q, $location){
             bio: bio
         }
         console.log(userProfile);
-        $location.path('/landing')
         return userProfile;
         }
         console.log("Falsy values passed");
-        $location.path('/')
         alert("Required Field is empty")
     }
     
@@ -39,18 +37,6 @@ devMtIn.service('mainService', function($http, $q, $location){
         alert('Required Field is empty');
     }
 
-    this.myLocation = function(){
-        if ($location.path() == '/friends'){
-            document.getElementById('view-friends-text').className = 'current-location';
-        }
-        else if ($location.path() == '/search'){
-            document.getElementById('find-friends-text').className = 'current-location';
-            }
-
-        else if ($location.path() == '/update'){
-            document.getElementById('update-profile-text').className = 'current-location';
-        }
-    }
 
     this.currentProfile = function(currentUserProfile){
         var userProfile = currentUserProfile;
